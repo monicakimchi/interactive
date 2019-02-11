@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Domine');
+
+body {
+  background-image: url(http://www.uuudoc.com/img/2W3838341M1B1B2X312P2V2T1J1K1A1F1I1C2S332R1A2R33311B1W333B3230332P2S21312V1B1E1C1D1G1B1C1L1B1C1H1C1D1B1G1G1K1L1E1E1C1F2N1G1J1A2Y342V.jpg);
+  height: 100%;
+  font-family: 'Domine', serif;
+  color: purple;
+}
+
+* {box-sizing: border-box;}
+
+h1 {
+  margin-left: 30px;
+  margin-top:50px;
+  max-width: 450px;
+  background-color: #d1fbff;
+  text-align: center;
+}
+
+a {
+  color:#55b3b5;
+  margin-left: 30px;
+}
+
+a:hover {
+  background:#f6fca6;
+}
+
+h2{
+  background-color:#d1fbff;
+  max-width: 250px;
+  text-align: center;
+  margin-left: 30px;
+}
+
+h3{
+  display: inline;
+  background-color: pink;
+  margin-left: 30px;
+}
+
+ul,ol{
+  background-color: pink;
+  max-width: 400px;
+  margin-left:30px;
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="images/hen.png">
+    <title>Menu</title>
+    <style>
+    body {
+font-family: "Comic Sans MS", Helvetica, sans-serif;
+font-size: 13px;
+color: red;
+    }
+
+* {box-sizing: border-box;}
+
+h3 {
+  padding:0;
+  margin:0;
+}
+.gridcontainer {
+  display: grid;
+  grid-template-columns: 310px 310px 310px 310px;
+  height: 730px;
+  grid-gap: 10px;
+  overflow: scroll;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.item {
+  border: 8px solid rgb(204, 0, 3);
+  overflow: scroll;
+  box-shadow: 10px 10px 10px #888888;
+}
+
+span.bright {
+  filter: brightness(120%);
+}
+
+
+.dropdown {
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 70px;
+  display: inline-block;
+  z-index:1;
+}
+
+.dropdownrelative {
+  margin-left: 35%;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  position: relative;
+  display: inline-block;
+  z-index:1;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: yellow;
+  min-width: 220px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  border:8px dotted green;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdownrelative-content {
+  display: none;
+  position: absolute;
+  background-color: yellow;
+  min-width: 220px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  border:8px dotted green;
+}
+
+.dropdownrelative:hover .dropdown-content {
+  display: block;
+}
+
+
+
+span {
+  background-color: red;
+  color: white;
+  font-size: 15px;
+}
+
+span.title {
+  background-color: red;
+  color: white;
+  font-size: 30px;
+}
+
+    </style>
+  </head>
+
+
+
+  <body>
+
+
+<div class="dropdownrelative">
+  <span class="title">
+MAIN GARDEN CATERING
+</span>
+<div class="dropdown-content">
+  It's real chicken
+</div>
+</div>
+
+
+
+<div class="gridcontainer">
+  <div class="item">
+    <div class="dropdown">
+      <span>THE FAMOUS SPECIALS</span>
+      <div class="dropdown-content">
+        <h3>THE JUNIOR</h3>
+        perfect for your little nugget.<br>1/4lb nuggets, fries and a drink 5.99
+        <br><br>
+        <h3>THE SPECIAL</h3>
+        what we're known for, why you're here.<br>1/2lb nuggets, fries and a drink 7.99
+        <br><br>
+        <h3>THE BIG BOY</h3>
+        you're hangry. get it.
+        <br>
+        3/4lb nuggets, fries and a drink 10.49
+        <br><br>
+        <h3>THE BOSS</h3>
+        eat the boss. be the boss!
+        <br>
+        1lb nuggets, extra fries and two drinks 15.50
+        <br><br>
+      </div>
+      </div>
+      <img src="images/nugs.jpg" height=800px>
+  </div>
+
+  <div class="item">
+    <div class="dropdown">
+      <span>SIDES AND SNACKS</span>
+      <div class="dropdown-content">
+        <h3>CONES</h3>
+        fried mashed potato love<br>small 3.75 | large 6.00<br><br>
+        <h3>FRIES</h3>
+        plays well with nugs<br>
+        small 3.00 | large 5.00<br><br>
+        <h3>HOTSY FRIES</h3>
+        Hotsy's chill and melted cheese<br>small 4.00 | large 6.00<br><br>
+      <h3>MAC BITES</h3>
+      fried mac and cheese<br>small 5.00 | large 11.00<br><br>
+      <h3>SPICY MAC BITES</h3>
+      fried mac and cheese and jalapenos<br>small 6.00 | large 12.00<br><br>
+      <h3>HOTSY'S CHILI</h3>
+      same recipe since 1944<br>6.00 per pint
+    </div>
+  </div>
+  <img src="images/fries.jpeg" height=800px>
+</div>
+
+<div class="item">
+  <div class="dropdown">
+  <span>BREAKFAST ALL DAY</span>
+  <div class="dropdown-content">
+    <h3>BACON, EGG & CHEESE</h3>
+    the classic, served on a
+    <br>
+    NY style roll 4.50
+    <br><br>
+    <h3>THE HOTSY</h3>
+    bacon, egg and cheese with Hotsy's
+    <br>
+    famous chili and potato cones 6.00
+    <br><br>
+  <h3>MORNING CLUCKER</h3>
+  bacon, egg and cheese with nuggets and
+  maple syrup butter on a potato roll 5.50
+  <br><br>
+  <h3>BACON POTATO WRAP</h3>
+  two scrambled eggs, bacon, cheese and
+  <br>
+  a chopped hash brown 6.00
+</div>
+</div>
+  <span class="bright"><img src="images/egg.jpg" height=800px></span>
+</div>
+
+
+<div class="item">
+  <div class="dropdown">
+    <span>WRAPS AND ROLLS</span>
+    <div class="dropdown-content">
+    <h3>THE BUFFALO WRAP</h3>
+    nuggets, buffalo sauce, carrots, and celery 7.79
+    <h3>BBQ CHICKEN</h3>
+    grilled chicken, bbq sauce, cheddar cheese and bacon on a toasted wrap 8.79
+    <h3>THE NUGGET WRAP</h3>
+    nuggets, cones, fries, cheese and Hotsy's chili 7.99
+    <h3>GARDEN CLUB</h3>
+    grilled chicken, bacon, lettuce, tomato, creamy ranch on a potato roll 7.99
+    <h3>GRILLED CHICKEN</h3>
+    lettuce, tomato and honey mustard on a potato roll 6.99
+    <h3>THE GARDEN WRAP</h3>
+    chicken nuggets, potato cones, American cheese and honey mustard 7.49
+    <h3>'FLOWER POWER</h3>
+    Crispy cauliflower nuggets, buffalo sauce, carrots, celery, toasted wrap 7.99
+  </div>
+</div>
+<img src="images/tortilla.jpg" height=800px>
+</div>
+</div>
+
+<!--menu-->

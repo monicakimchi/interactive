@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="images/hen.png">
+    <title>Menu</title>
+    <style>
+    body {
+font-family: "Karla", Helvetica, sans-serif;
+font-size: 12px;
+color: rgb(87, 22, 173);
+    }
+
+@font-face {
+      font-family: 'Karla';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Karla'), local('Karla-Regular'), url(https://fonts.gstatic.com/s/karla/v6/qkBbXvYC6trAT7RVLtyU5rZP.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+* {box-sizing: border-box;}
+
+.nav{
+    list-style:none;
+    font-weight: bold;
+    margin:6em auto;
+    padding:0;
+    text-align:center;
+}
+.nav li{
+    display:inline-block;
+    padding: 1em
+}
+
+.nav a{
+  color: rgb(87, 22, 173);
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: rgb(115, 159, 163);
+}
+#findus{
+  position:absolute;
+  right: 45px;
+  top: 75px
+}
+#logo {
+  position: absolute;
+  left: 45px;
+  top: 38px;
+}
+
+
+.title {
+  max-width: 500px;
+margin: 10em auto 10em;
+text-align: center;
+}
+
+span.bigger {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+span.blue {
+  color: rgb(115, 159, 163);
+}
+
+.gridcontainer1 {
+  display: grid;
+  /* grid-template-columns: 50% 50%; */
+  grid-template-areas: 'nuggets fries';
+  background-color: invisible;
+  grid-gap: 5px;
+  padding: 5px;
+}
+
+.griditem1 {
+  /* grid-column-start: 1;
+  grid-column-end:2; */
+  grid-area: nuggets;
+  place-self: center;
+  }
+
+.griditem2 {
+  /* grid-column-start: 2;
+  grid-column-end: 3; */
+  grid-area: fries;
+  place-self: center;
+}
+
+.gridcontainer2{
+  margin-top:5em;
+  margin-bottom: 5em;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto;
+}
+
+.item{
+  padding-left: 4em;
+  padding-right:2em;
+}
+
+hr {
+  margin: 0 8em 0 8em;
+}
+
+    </style>
+  </head>
+
+
+
+  <body>
+
+<!--header-->
+  <div class="nav">
+    <ul>
+        <li>
+          <a href="#specials">THE FAMOUS SPECIALS</a>
+        </li>
+        <li>
+          <a href="#nuggets">NUGGETS</a>
+        </li>
+        <li>
+          <a href="#sides">SIDES</a>
+        </li>
+        <li>
+          <a href="#breakfast">BREAKFAST ALL DAY</a>
+        </li>
+        <li>
+          <a href="#wraps">WRAP AND ROLLS</a>
+        </li>
+        <li>
+        <a href="#salads">SALADS</a>
+      </li>
+        <li>
+        <a href="#milkshakes">MILKSHAKES</a>
+      </li>
+        <li div id="findus">
+          <a href=https://www.gardencatering.com/>FIND US</a>
+        </li>
+    </ul>
+  </div>
+
+<div id="logo">
+  <img src="images/logo.png" height="110em">
+</div>
+
+
+<!--title-->
+<div class="title">
+<span class="bigger">GARDEN CATERING</span>
+<br><br>
+it's actually chicken
+<br>
+930 chapel St. New Haven, CT | 475.655.2816
+<br>
+menu style taken from <a href="http://www.project-acai.com/menu/"><span class="blue">Project Acai</span></a>
+</div>
+</div>
+
+<!--pictures-->
+
+<div class="gridcontainer1">
+  <div class="griditem1">
+  <img src="images/fries.jpg" width="650px">
+</div>
+
+<div class="griditem2">
+  <img src="images/nugget.jpeg" width="650px">
+</div>
+</div>
+
+<!--menu-->
+
+<div class="gridcontainer2">
+  <div class="item">
+    <h1 a id="specials">THE FAMOUS SPECIALS</h1>
+
+      <h3>THE JUNIOR</h3>
+      perfect for your little nugget.<br>1/4lb nuggets, fries and a drink 5.99
+      <br><br>
+      <h3>THE SPECIAL</h3>
+      what we're known for, why you're here.<br>1/2lb nuggets, fries and a drink 7.99
+      <h3>THE BIG BOY</h3>
+      you're hangry. get it.
+      <br>
+      3/4lb nuggets, fries and a drink 10.49
+      <br><br>
+      <h3>THE BOSS</h3>
+      eat the boss. be the boss!
+      <br>
+      1lb nuggets, extra fries and two drinks 15.50
+      <br><br>
+  </div>
+  <div class="item">
+    <h1 a id="sides">SIDES</h1>
+      <h3>CONES</h3>
+      fried mashed potato love<br>small 3.75 | large 6.00<br><br>
+      <h3>FRIES</h3>
+      plays well with nugs<br>
+      small 3.00 | large 5.00<br><br>
+      <h3>HOTSY FRIES</h3>
+      Hotsy's chill and melted cheese<br>small 4.00 | large 6.00
+    <h3>MAC BITES</h3>
+    fried mac and cheese<br>small 5.00 | large 11.00<br><br>
+    <h3>SPICY MAC BITES</h3>
+    fried mac and cheese and jalapenos<br>small 6.00 | large 12.00<br><br>
+    <h3>HOTSY'S CHILI</h3>
+    same recipe since 1944<br>6.00 per pint
+  </div>
+  <div class="item">
+    <h1 a id="breakfast">BREAKFAST ALL DAY</h1>
+      <h3>BACON, EGG & CHEESE</h3>
+      the classic, served on a
+      <br>
+      NY style roll 4.50
+      <br><br>
+      <h3>THE HOTSY</h3>
+      bacon, egg and cheese with Hotsy's
+      <br>
+      famous chili and potato cones 6.00
+      <br>
+    <h3>MORNING CLUCKER</h3>
+    bacon, egg and cheese with nuggets and
+    <br>
+    maple syrup butter on a potato roll 5.50
+    <br><br>
+    <h3>BACON POTATO WRAP</h3>
+    two scrambled eggs, bacon, cheese and
+    <br>
+    a chopped hash brown 6.00
+   </div>
+  <div class="item">
+    <h1 a id="wraps">WRAPS AND ROLLS</h1>
+    <h3>THE BUFFALO WRAP</h3>
+    nuggets, buffalo sauce, carrots, and celery 7.79
+    <br><br>
+    <h3>BBQ CHICKEN</h3>
+    grilled chicken, bbq sauce, cheddar cheese and bacon on a toasted wrap 8.79
+    <br><br>
+    <h3>THE NUGGET WRAP</h3>
+    nuggets, cones, fries, cheese and Hotsy's chili 7.99
+    <br><br>
+    <h3>GARDEN CLUB</h3>
+    grilled chicken, bacon, lettuce, tomato, creamy ranch on a potato roll 7.99
+    <br><br>
+    <h3>GRILLED CHICKEN</h3>
+    lettuce, tomato and honey mustard on a potato roll 6.99
+    <br><br>
+    <h3>THE GARDEN WRAP</h3>
+    chicken nuggets, potato cones, American cheese and honey mustard 7.49
+    <br><br>
+    <h3>'FLOWER POWER</h3>
+    Crispy cauliflower nuggets, buffalo sauce, carrots, celery, toasted wrap 7.99
+    <br><br>
+    <br>
+   </div>
+</div>
+
+<br>
+
+
+<hr>
+
+<br>
+<br>
+<br>
+
+    <center>ORDER ONLINE |
+    <a href="https://www.gardencatering.com/">GARDENCATERING.COM</a></center>
+
+
+  </div>
+  </body>
+</html>
