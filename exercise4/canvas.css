@@ -1,0 +1,10 @@
+
+*, *:before, *:after{
+	box-sizing: border-box;}
+
+.canvas {
+	width: 600px;
+	height: 700px;
+	margin: 50px auto;
+	position: relative;
+}

@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>CSS Still Life 1</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+
+	<style>
+
+
+body{
+		background: linear-gradient(to bottom, rgba(189,219,227,1) 0%, rgba(117,189,209,1) 41%, rgba(9,48,59,1) 100%);
+	}
+
+html {
+	height: 100%;
+}
+
+	.canvas {
+		width: 900px;
+		height: 556px;
+		margin: 100px auto;
+		background: none;
+		position: relative;
+	}
+
+
+
+	/* this is where you can style the objects in your still life */
+	*, *:before, *:after{
+    box-sizing: border-box;}
+
+	#cloud {
+		height: 200px;
+    width: 900px;
+    background: black;
+    border-radius: 600px;
+    position: absolute;
+    opacity: 0.5;
+    top: -150px;
+    left: -300px;
+		z-index: 3;
+		animation-name: cloudbob;
+		animation-duration: 5s;
+		animation-timing-function: ease-in-out;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+}
+
+@keyframes cloudbob {
+	0%{
+		transform: translate(0) rotate(180deg);
+	}
+	100% { transform: translateY(50px) rotate(180deg);
+	}
+
+}
+
+#cloud:before {
+	content: "";
+	    position: absolute;
+	    top: -100px;
+	    box-sizing: border-box;
+	    height: 200px;
+	    width: 200px;
+	    left: 150px;
+	    border-radius: 50%;
+	    border-bottom-color: transparent;
+	    border-right-color: transparent;
+	    background: black;
+	    transform: rotate(40deg);
+	}
+
+#cloud:after {
+	content: "";
+	    position: absolute;
+	    height: 400px;
+	    width: 400px;
+	    top: -200px;
+	    left: 320px;
+	    border-radius: 50%;
+	    box-sizing: border-box;
+	    border-bottom-color: transparent;
+	    background: black;
+	    border-right-color: transparent;
+	    transform: rotate(55deg);
+}
+
+#cloud2 {
+	height: 200px;
+	width: 900px;
+	background: black;
+	border-radius: 600px;
+	position: absolute;
+	transform: rotate(180deg);
+	opacity: 0.5;
+	top: -180px;
+	left: 340px;
+	z-index: 3;
+	animation-name: cloudbob2;
+	animation-duration: 3s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes cloudbob2 {
+	0%{
+		transform: translate(0) rotate(180deg);
+	}
+	100% { transform: translateY(30px) rotate(180deg);
+	}
+
+}
+
+#cloud2:before {
+content: "";
+		position: absolute;
+		top: -100px;
+		box-sizing: border-box;
+		height: 200px;
+		width: 200px;
+		left: 150px;
+		border-radius: 50%;
+		border-bottom-color: transparent;
+		border-right-color: transparent;
+		background: black;
+		transform: rotate(40deg);
+}
+
+#cloud2:after {
+content: "";
+		position: absolute;
+		height: 400px;
+		width: 400px;
+		top: -200px;
+		left: 320px;
+		border-radius: 50%;
+		box-sizing: border-box;
+		border-bottom-color: transparent;
+		background: black;
+		border-right-color: transparent;
+		transform: rotate(55deg);
+}
+
+#cloud3 {
+	height: 200px;
+	width: 900px;
+	background: black;
+	border-radius: 600px;
+	position: absolute;
+	transform: rotate(180deg);
+	opacity: 0.5;
+	top: -180px;
+	left: -57px;
+	z-index: 3;
+	animation-name: cloudbob3;
+	animation-duration: 4s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes cloudbob3 {
+	0%{
+		transform: translate(0) rotate(180deg);
+	}
+	100% { transform: translateY(50px) rotate(180deg);
+	}
+}
+
+#cloud3:before {
+content: "";
+		position: absolute;
+		top: -100px;
+		box-sizing: border-box;
+		height: 200px;
+		width: 200px;
+		left: 150px;
+		border-radius: 50%;
+		border-bottom-color: transparent;
+		border-right-color: transparent;
+		background: black;
+		transform: rotate(40deg);
+}
+
+#cloud3:after {
+content: "";
+		position: absolute;
+		height: 400px;
+		width: 400px;
+		top: -200px;
+		left: 320px;
+		border-radius: 50%;
+		box-sizing: border-box;
+		border-bottom-color: transparent;
+		background: black;
+		border-right-color: transparent;
+		transform: rotate(55deg);
+}
+
+#cloud4 {
+	height: 200px;
+	width: 900px;
+	background: black;
+	border-radius: 600px;
+	position: absolute;
+	transform: rotate(180deg);
+	opacity: 0.5;
+	top: -200px;
+	left: -450px;
+	z-index: 3;
+	animation-name: cloudbob4;
+	animation-duration: 4s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes cloudbob4 {
+	0%{
+		transform: translate(0) rotate(180deg);
+	}
+	100% { transform: translateY(35px) rotate(180deg);
+	}
+}
+
+#cloud4:before {
+content: "";
+		position: absolute;
+		top: -100px;
+		box-sizing: border-box;
+		height: 200px;
+		width: 200px;
+		left: 150px;
+		border-radius: 50%;
+		border-bottom-color: transparent;
+		border-right-color: transparent;
+		background: black;
+		transform: rotate(40deg);
+}
+
+#cloud4:after {
+content: "";
+		position: absolute;
+		height: 400px;
+		width: 400px;
+		top: -200px;
+		left: 320px;
+		border-radius: 50%;
+		box-sizing: border-box;
+		border-bottom-color: transparent;
+		background: black;
+		border-right-color: transparent;
+		transform: rotate(55deg);
+}
+
+
+#cloud5 {
+	height: 200px;
+	width: 900px;
+	background: black;
+	border-radius: 600px;
+	position: absolute;
+	transform: rotate(180deg);
+	opacity: 0.5;
+	top: -180px;
+	left: 450px;
+	z-index: 3;
+	animation-name: cloudbob5;
+	animation-duration: 6s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes cloudbob5 {
+	0%{
+		transform: translate(0) rotate(180deg);
+	}
+	100% { transform: translateY(50px) rotate(180deg);
+	}
+}
+
+#cloud5:before {
+content: "";
+		position: absolute;
+		top: -100px;
+		box-sizing: border-box;
+		height: 200px;
+		width: 200px;
+		left: 150px;
+		border-radius: 50%;
+		border-bottom-color: transparent;
+		border-right-color: transparent;
+		background: black;
+		transform: rotate(40deg);
+}
+
+#cloud5:after {
+content: "";
+		position: absolute;
+		height: 400px;
+		width: 400px;
+		top: -200px;
+		left: 320px;
+		border-radius: 50%;
+		box-sizing: border-box;
+		border-bottom-color: transparent;
+		background: black;
+		border-right-color: transparent;
+		transform: rotate(55deg);
+}
+
+
+
+#anglerfish {
+	position: absolute;
+	width: 300px;
+	height: 200px;
+	bottom: -60px;
+	left: -75%;
+	animation-name: anglerswimmove;
+	animation-duration: 35s;
+	animation-direction: normal;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+
+
+@keyframes anglerswimmove {
+	0% {
+		transform: translate(0px);
+	}
+	100%{
+	transform: translate(1800px);
+	}
+}
+
+#anglerfish #body{
+	position: absolute;
+	    height: 0px;
+	    width: 250px;
+	    border-radius: 100px;
+	    top: 0px;
+			left: 100px;
+	    border-top: 100px solid #64496d;
+	    border-left: 100px solid #64496d;
+	    border-right: 100px solid transparent;
+	    border-bottom: 80px solid #64496d;
+}
+
+#anglerfish:hover #light{
+	box-shadow: 0 0 30px 20px #fffee0;
+}
+
+#anglerfish:hover #eyeball{
+	box-shadow: 0 0 30px 10px #fffee0;
+}
+
+#anglerfish #eyeball{
+	width: 45px;
+	height: 45px;
+	background: white;
+	border-radius: 200px;
+	position: absolute;
+	left: 70%;
+	top: 13%;
+	transition: 0.3s box-shadow ease-out;
+}
+
+#anglerfish #tail {
+	position: absolute;
+	    width: 120px;
+	    height: 120px;
+	    border-radius: 50%;
+	    box-shadow: 40px 40px 0 0 #482152;
+	    border-top-left-radius: 50%;
+	    top: 20px;
+	    left: -70px;
+	    transform: rotate(-35deg);
+			animation-duration: 1.5s;
+			animation-name: anglerswim;
+			animation-iteration-count: infinite;
+			animation-direction: normal;
+			animation-timing-function: ease-in-out;
+}
+
+@keyframes anglerswim {
+0% {
+	transform: rotate(-35deg);
+}
+12.5% {
+	transform: rotate(-32deg);
+}
+25% {
+	transform: rotate(-30deg);
+}
+37.5% {
+	transform: rotate(-32deg);
+}
+50% {
+	transform: rotate(-35deg);
+}
+62.5% {
+	transform: rotate(-37deg);
+}
+75% {
+	transform: rotate(-40deg);
+}
+87.5% {
+	transform: rotate(-37deg);
+}
+100% {
+	transform: rotate(-35deg);
+}
+}
+
+#anglerfish #string {
+	position: absolute;
+	width: 200px;
+	height: 300px;
+	border: solid 5px #64496d;
+	border-color: #64496d transparent transparent transparent;
+	border-radius: 50%/100px 280px 0 0;
+	left: 232px;
+	top: -27px;
+	animation-name: lightwiggle;
+	animation-duration: 0.8s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate;
+}
+
+@keyframes lightwiggle {
+	0%{
+		transform: rotate(1deg);
+	}
+
+	100%{
+		transform: rotate(-5deg);
+	}
+}
+
+
+
+
+#anglerfish #string #light {
+	position: absolute;
+    background-color: #fffc71;
+    height: 20px;
+    width: 20px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    transform: rotate(45deg);
+    right: 33px;
+    top: 44px;
+		transition: 0.3s box-shadow ease-out;
+	}
+
+	#anglerfish #fin {
+		position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 20px 2px 0 0 #1c0c4c;
+    border-top-left-radius: 30%;
+    top: 94px;
+    left: 125px;
+    transform: rotate(-35deg);
+	}
+
+	#anglerfish #teeth:before,
+	#anglerfish #teeth:after {
+content: "";
+		position: absolute;
+		    width: 0;
+		    height: 0;
+		    border-top: 10px solid transparent;
+		    border-left: 50px solid white;
+		    border-bottom: 10px solid transparent;
+		    transform: rotate(46deg);
+		    z-index: -1;
+	}
+
+	#anglerfish #teeth:before{
+		left: 299px;
+		top: 40px;
+	}
+
+	#anglerfish #teeth:after{
+		left: 98.4%;
+top: 24%;
+	}
+
+	#anglerfish #teeth2:before,
+	#anglerfish #teeth2:after {
+content: "";
+		position: absolute;
+		    width: 0;
+		    height: 0;
+		    border-top: 10px solid transparent;
+		    border-left: 50px solid white;
+		    border-bottom: 10px solid transparent;
+		    transform: rotate(46deg);
+		    z-index: -1;
+	}
+
+	#anglerfish #teeth2:before{
+		left: 260px;
+    top: 60px;
+	}
+
+	#anglerfish #teeth2:after{
+		left: 82.4%;
+    top: 34%;
+	}
+
+	#anglerfish #teeth3:before,
+	#anglerfish #teeth3:after {
+content: "";
+		position: absolute;
+		    width: 0;
+		    height: 0;
+		    border-top: 10px solid transparent;
+		    border-left: 50px solid white;
+		    border-bottom: 10px solid transparent;
+		    transform: rotate(-110deg);
+		    z-index: -1;
+	}
+
+	#anglerfish #teeth3:before{
+		left: 300px;
+    top: 90px;
+	}
+
+	#anglerfish #teeth3:after{
+		left: 92.4%;
+    top: 50%;
+	}
+
+
+#pufferfish{
+	position: absolute;
+	width:200px;
+	height:125px;
+	top: 30%;
+	right: -56%;
+	animation-duration: 20s;
+	animation-name: swimmove;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	animation-timing-function: linear;
+}
+
+
+@keyframes swimmove {
+	0% {
+		transform: translate(0px);
+	}
+100%{
+	transform: translate(-1800px);
+}
+}
+
+
+
+
+#pufferfish #body{
+		position: absolute;
+    width: 80%;
+    height: 100%;
+    background: #ff9927;
+    border-radius: 59%;
+	}
+
+
+#pufferfish #body #star {
+	  visibility: hidden;
+	  transition: all 0s ease-out;
+      background: inherit;
+      width: 160px;
+      height: 160px;
+      position: absolute;
+    }
+
+    #star:before,
+    #star:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 160px;
+      width: 160px;
+      background: inherit;
+    }
+    #star:before {
+      transform: rotate(30deg);
+    }
+    #star:after {
+      transform: rotate(60deg);
+    }
+
+#pufferfish #body:hover #star {
+	  visibility: visible;
+	}
+
+#pufferfish	#body:hover #eyeball {
+		transform: scale(2);
+	}
+
+
+
+
+	/* #pufferfish #body:hover{
+		transform: scale(1.9);
+		width: 60%;
+		height: 90%;
+	} */
+
+
+#pufferfish #lips{
+	position: absolute;
+width: 100px;
+height: 90px;
+transform: rotate(-90deg)scale(0.7);
+left: -40px;
+top: 15%;
+}
+
+#lips:before,
+#lips:after {
+	position: absolute;
+	content: "";
+	left: 50px;
+	top: 0;
+	width: 50px;
+	height: 80px;
+	background: #ff5800;
+	border-radius: 50px 50px 0 0;
+	transform: rotate(-45deg);
+	transform-origin: 0% 100%;
+}
+#lips:after {
+	left: 0;
+	transform: rotate(45deg);
+	transform-origin: 100% 100%;
+}
+
+#pufferfish #tail{
+	position: absolute;
+	width: 100px;
+	height: 89px;
+	transform: rotate(90deg);
+	left: 121px;
+	top: 15%;
+animation-duration: 0.8s;
+animation-name: swim;
+animation-iteration-count: infinite;
+animation-direction; normal;
+animation-timing-function: ease-in-out;
+}
+
+@keyframes swim {
+0% {
+	transform: rotate(90deg);
+}
+12.5% {
+	transform: rotate(95deg);
+}
+25% {
+	transform: rotate(100deg);
+}
+37.5% {
+	transform: rotate(95deg);
+}
+50% {
+	transform: rotate(90deg);
+}
+62.5% {
+	transform: rotate(85deg);
+}
+75% {
+	transform: rotate(80deg);
+}
+87.5% {
+	transform: rotate(85deg);
+}
+100% {
+	transform: rotate(90deg);
+}
+}
+
+#pufferfish #tail:before,
+#pufferfish #tail:after {
+	position: absolute;
+	content: "";
+	left: 50px;
+	top: 0;
+	width: 50px;
+	height: 90px;
+	background: #f3983e;
+	border-radius: 50px 50px 0 0;
+	transform: rotate(-45deg);
+	transform-origin: 0% 100%;
+}
+#pufferfish #tail:after {
+	left: 0;
+	transform: rotate(45deg);
+	transform-origin: 100% 100%;
+}
+
+#pufferfish #fin{
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 20px solid transparent;
+	border-left: 50px solid #ff5e00;
+	border-bottom: 20px solid transparent;
+	left: 55%;
+	top: 40%;
+	animation-duration: 1s;
+	animation-name: finswim;
+	animation-iteration-count: infinite;
+	animation-direction; alternate;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes finswim{
+	0% {
+		transform: rotate(5deg);
+		transform-origin: center left;
+	}
+	12.5% {
+		transform: rotate(10deg);
+			transform-origin: center left;
+	}
+	25% {
+		transform: rotate(5deg);
+			transform-origin: center left;
+	}
+	37.5% {
+		transform: rotate(0deg);
+			transform-origin: center left;
+	}
+	50% {
+		transform: rotate(-5deg);
+			transform-origin: center left;
+	}
+	62.5% {
+		transform: rotate(-10deg);
+			transform-origin: center left;
+	}
+	75% {
+		transform: rotate(-5deg);
+			transform-origin: center left;
+	}
+	87.5% {
+		transform: rotate(0deg);
+			transform-origin: center left;
+	}
+	100% {
+		transform: rotate(5deg);
+			transform-origin: center left;
+	}
+	}
+
+
+	#pufferfish #eyeball{
+		position: absolute;
+		    background: black;
+		    width: 13px;
+		    height: 13px;
+		    border-radius: 100%;
+		    left: 25%;
+		    top: 35%;
+				transition: all 0s ease-out;
+	}
+
+
+
+	</style>
+
+</head>
+
+<body>
+
+		<!-- this starts the canvas div. do not delete this! -->
+
+		<div class="canvas">
+
+			<!-- below is where you put your objects in your still life -->
+<div id="cloud"></div>
+<div id="cloud2"></div>
+<div id="cloud3"></div>
+<div id="cloud4"></div>
+<div id="cloud5"></div>
+
+<div id="pufferfish">
+<div id="body"><div id="star"></div>
+<div id="lips"></div>
+<div id="tail"></div>
+<div id="fin"></div>
+<div id="eyeball"></div>
+</div>
+</div>
+
+<div id="anglerfish">
+<div id="body"></div>
+<div id="eyeball"></div>
+<div id="tail"></div>
+<div id="string"><div id="light"></div></div>
+<div id="fin"></div>
+<div id="teeth"></div>
+<div id="teeth2"></div>
+<div id="teeth3"></div>
+</div>
+
+		<!-- this ends the canvas div. do not delete this! -->
+
+</div>
+
+
+
+
+
+
+</div>
+
+</body>
+
+</html>
