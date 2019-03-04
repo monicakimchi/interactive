@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Title title title</title>
+   <meta charset="utf-8">
+ </head>
+
+ <body>
+   Content content content
+   <!-- JavaScript goes right before the the body ends! -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script type="text/javascript">
+
+console.log("Hi Monica!");
+var name="Monica";
+var year="2020";
+var introduction="Hi, I'm " + name + ", and I graduate in " + year;
+console.log(introduction);
+
+function hello(person){
+  var greeting="Hello, " + person + "! It's ";
+  var date= new Date();
+  alert(greeting+date);
+}
+
+hello("moniponi");
+
+$(document).ready(function(){
+  console.log("hello jQuery");
+});
+
+$(function() {
+  console.log("Hello jQuery");
+});
+
+$(function()
+{
+  $('body').css('background', 'yellow');
+})
+
+
+   </script>
+ </body>
+</html>
