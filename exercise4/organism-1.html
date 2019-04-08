@@ -824,12 +824,26 @@ animation-timing-function: ease-in-out;
 		<!-- this ends the canvas div. do not delete this! -->
 
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+	console.log("hello jQuery");
 
 
+//
+$(document).mousemove(function(e){
+	console.log(e.pageY+e.pageX);
+	$("#pufferfish").css({
+      'top': e.pageY + 'px',
+      'left': e.pageX + 'px'
+  });
+});
+//
 
 
-
-
+});
+</script>
 </div>
 
 </body>
